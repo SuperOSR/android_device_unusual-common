@@ -23,7 +23,7 @@ LOCAL_SHARED_LIBRARIES:= \
     libutils \
     libcutils \
     libcamera_client \
-    libui \
+    libui
 
 # JPEG conversion libraries and includes.
 LOCAL_SHARED_LIBRARIES += \
@@ -37,9 +37,9 @@ LOCAL_C_INCLUDES += \
 	external/jpeg \
 	external/skia/include/core \
 	frameworks/base/core/jni/android/graphics \
-	device/allwinner/common/include \
+	device/unusual/common/include \
 	frameworks/av/media/CedarX-Projects/CedarX/include/include_camera \
-	frameworks/native/include \
+	frameworks/native/include
 
 LOCAL_SRC_FILES := \
 	CameraHal.cpp \

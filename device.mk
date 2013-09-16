@@ -31,7 +31,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 	ro.opengles.version=131072 \
 	wifi.interface=wlan0 \
 	wifi.supplicant_scan_interval=60 \
-	ro.carrier=wifi-only \
+	ro.carrier=wifi-only
 
 
 DEVICE_PACKAGE_OVERLAYS += device/unusual/common/overlay
@@ -45,7 +45,7 @@ PRODUCT_COPY_FILES += \
 	frameworks/native/data/etc/android.hardware.sensor.compass.xml:system/etc/android.hardware.sensor.compass.xml \
 	frameworks/native/data/etc/android.hardware.touchscreen.multitouch.jazzhand.xml:system/etc/permissions/android.hardware.touchscreen.multitouch.jazzhand.xml \
 	frameworks/native/data/etc/android.hardware.usb.host.xml:system/etc/permissions/android.hardware.usb.host.xml \
-	frameworks/native/data/etc/android.hardware.usb.accessory.xml:system/etc/permissions/android.hardware.usb.accessory.xml \
+	frameworks/native/data/etc/android.hardware.usb.accessory.xml:system/etc/permissions/android.hardware.usb.accessory.xml
 
 # EXT4 Support
 PRODUCT_PACKAGES += make_ext4fs e2fsck
@@ -62,7 +62,7 @@ PRODUCT_PACKAGES += audio.primary.sun4i \
 	lights.sun4i \
 	power.sun4i \
 	sensors.sun4i \
-	setrecovery \
+	setrecovery
 #
 
 # CedarX libraries
@@ -80,7 +80,7 @@ PRODUCT_PACKAGES += libCedarA \
 	libaw_audioa \
 	libcedarv_base \
 	libstagefright_soft_cedar_h264dec \
-	librtmp \
+	librtmp
 #
 
 # runs after recovery boot
@@ -89,7 +89,7 @@ PRODUCT_COPY_FILES += device/unusual/common/postrecoveryboot.sh:recovery/root/sb
 # and let's get booting!
 PRODUCT_COPY_FILES += device/unusual/common/ueventd.sun4i.rc:root/ueventd.sun4i.rc \
 	device/unusual/common/init.sun4i.rc:root/init.sun4i.rc \
-	device/unusual/common/init.sun4i.usb.rc:root/init.sun4i.usb.rc \
+	device/unusual/common/init.sun4i.usb.rc:root/init.sun4i.usb.rc
 #
 
 # let us use the storage
