@@ -41,7 +41,7 @@ BOARD_USERDATAIMAGE_PARTITION_SIZE := 1073741824
 BOARD_FLASH_BLOCK_SIZE := 4096
 
 #EGL stuff
-BOARD_EGL_CFG := device/softwinner/common/egl.cfg
+BOARD_EGL_CFG := device/unusual/common/egl.cfg
 USE_OPENGL_RENDERER := true
 ENABLE_WEBGL := true
 BOARD_USE_SKIA_LCDTEXT := true
@@ -52,12 +52,12 @@ TARGET_BOOTANIMATION_USE_RGB565 := true
 #Recovery Stuff
 #TARGET_RECOVERY_UI_LIB := librecovery_ui_generic
 #TARGET_RECOVERY_UPDATER_LIBS += librecovery_updater_generic
-BOARD_CUSTOM_RECOVERY_KEYMAPPING := ../../device/softwinner/common/recovery_keys.c
+BOARD_CUSTOM_RECOVERY_KEYMAPPING := ../../device/unusual/common/recovery_keys.c
 TARGET_RECOVERY_PRE_COMMAND := "setrecovery"
 BOARD_USE_LEGACY_TOUCHSCREEN := true
 
 #Headers stuff
-TARGET_SPECIFIC_HEADER_PATH := device/softwinner/common/include
+TARGET_SPECIFIC_HEADER_PATH := device/unusual/common/include
 
 # Wifi stuff
 BOARD_WIFI_VENDOR                := realtek
@@ -77,6 +77,6 @@ BOARD_KERNEL_BASE := 0x40000000
 BOARD_KERNEL_CMDLINE := console=ttyS0,115200 rw init=/init loglevel=8
 BOARD_KERNEL_PAGESIZE := 2048
 
-TARGET_KERNEL_SOURCE := kernel/softwinner/common
+TARGET_KERNEL_SOURCE := kernel/unusual/common
 TARGET_KERNEL_CONFIG := sun4i_crane_defconfig
 TARGET_KERNEL_CUSTOM_TOOLCHAIN := arm-eabi-4.4.3

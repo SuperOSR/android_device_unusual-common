@@ -16,7 +16,7 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base.mk)
 $(call inherit-product, frameworks/native/build/tablet-dalvik-heap.mk)
 
-$(call inherit-product, device/softwinner/common/device.mk)
+$(call inherit-product, device/unusual/common/device.mk)
 
 # Set those variables here to overwrite the inherited values.
 PRODUCT_NAME := full_a10

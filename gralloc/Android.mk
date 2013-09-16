@@ -30,7 +30,7 @@ LOCAL_MODULE_TAGS := optional
 LOCAL_SHARED_LIBRARIES := liblog libcutils libMali libGLESv1_CM libUMP
 
 # Include the UMP header files
-LOCAL_C_INCLUDES := device/softwinner/common/include
+LOCAL_C_INCLUDES := device/unusual/common/include
 
 LOCAL_CFLAGS:= -DLOG_TAG=\"gralloc\" -DGRALLOC_32_BITS -DSTANDARD_LINUX_SCREEN
 

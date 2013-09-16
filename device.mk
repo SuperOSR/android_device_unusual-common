@@ -34,7 +34,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 	ro.carrier=wifi-only \
 
 
-DEVICE_PACKAGE_OVERLAYS += device/softwinner/common/overlay
+DEVICE_PACKAGE_OVERLAYS += device/unusual/common/overlay
 
 # Permissions
 PRODUCT_COPY_FILES += \
@@ -84,25 +84,25 @@ PRODUCT_PACKAGES += libCedarA \
 #
 
 # runs after recovery boot
-PRODUCT_COPY_FILES += device/softwinner/common/postrecoveryboot.sh:recovery/root/sbin/postrecoveryboot.sh
+PRODUCT_COPY_FILES += device/unusual/common/postrecoveryboot.sh:recovery/root/sbin/postrecoveryboot.sh
 
 # and let's get booting!
-PRODUCT_COPY_FILES += device/softwinner/common/ueventd.sun4i.rc:root/ueventd.sun4i.rc \
-	device/softwinner/common/init.sun4i.rc:root/init.sun4i.rc \
-	device/softwinner/common/init.sun4i.usb.rc:root/init.sun4i.usb.rc \
+PRODUCT_COPY_FILES += device/unusual/common/ueventd.sun4i.rc:root/ueventd.sun4i.rc \
+	device/unusual/common/init.sun4i.rc:root/init.sun4i.rc \
+	device/unusual/common/init.sun4i.usb.rc:root/init.sun4i.usb.rc \
 #
 
 # let us use the storage
-PRODUCT_COPY_FILES += device/softwinner/common/vold.fstab:system/etc/vold.fstab
+PRODUCT_COPY_FILES += device/unusual/common/vold.fstab:system/etc/vold.fstab
 
 # include a wpa_supplicant.conf file
-PRODUCT_COPY_FILES += device/softwinner/common/wpa_supplicant.conf:system/etc/wifi/wpa_supplicant.conf
+PRODUCT_COPY_FILES += device/unusual/common/wpa_supplicant.conf:system/etc/wifi/wpa_supplicant.conf
 
 # OMX codec support
-PRODUCT_COPY_FILES += device/softwinner/common/media_codecs.xml:system/etc/media_codecs.xml
+PRODUCT_COPY_FILES += device/unusual/common/media_codecs.xml:system/etc/media_codecs.xml
 
 # Audio policy
-PRODUCT_COPY_FILES += device/softwinner/common/audio/audio_policy.conf:system/etc/audio_policy.conf
+PRODUCT_COPY_FILES += device/unusual/common/audio/audio_policy.conf:system/etc/audio_policy.conf
 
 $(call inherit-product, frameworks/native/build/tablet-dalvik-heap.mk)
 $(call inherit-product, build/target/product/full_base.mk)
